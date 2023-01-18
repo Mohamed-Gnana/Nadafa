@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="UserAggregate\Commands\DeleteUser\" />
+    <Folder Include="UserAggregate\Commands\ActivateUser\" />
+    <Folder Include="UserAggregate\Commands\DeactivateUser\" />
+    <Folder Include="UserAggregate\Commands\Login\" />
+    <Folder Include="UserAggregate\Commands\ForgetPassword\" />
+    <Folder Include="UserAggregate\Commands\ActivatePhoneNumber\" />
+    <Folder Include="UserAggregate\Commands\DeactivatePhoneNumber\" />
+    <Folder Include="UserAggregate\Commands\ResetPassword\" />
+    <Folder Include="UserAggregate\Commands\UpdateUserCoins\" />
+    <Folder Include="UserAggregate\Queries\GetUsers\" />
+    <Folder Include="UserAggregate\Queries\GetUserProfile\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nadafa.SharedKernal.Application\Nadafa.SharedKernal.Application.csproj" />
+    <ProjectReference Include="..\Nadafa.Users.Repositories\Nadafa.Users.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

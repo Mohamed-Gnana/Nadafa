@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nadafa.Users", "Nadafa.Users", "{9B3AF21E-502F-4497-B068-17F6BB87D2F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nadafa.Requests", "Nadafa.Requests", "{0A5EC5EA-FE9F-422D-8E57-50AE465D5771}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nadafa.Gateway", "Nadafa.Gateway", "{10D42EB2-2486-4E11-A268-C6549839B74D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Domain", "src\Nadafa.Domain\Nadafa.Users.Domain.csproj", "{B82D83A9-4111-4E48-95D7-F69920A02DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Infrastructure", "src\Nadafa.Infrastructure\Nadafa.Users.Infrastructure.csproj", "{1174FC1A-8D95-4506-9FCA-0506F1C5E86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Application", "src\Nadafa.Application\Nadafa.Users.Application.csproj", "{1817FC89-74C8-419F-910F-F13229186439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Api", "src\Nadafa.Api\Nadafa.Users.Api.csproj", "{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nadafa.SharedKernal", "Nadafa.SharedKernal", "{E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Domain", "src\Nadafa.SharedKernal.Domain\Nadafa.SharedKernal.Domain.csproj", "{0D6C5881-EBEA-49A1-BE89-0772E09E055C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Infrastructure.EntityFramework", "src\Nadafa.SharedKernal.Infrastructure\Nadafa.SharedKernal.Infrastructure.EntityFramework.csproj", "{2BACAC50-03A1-4B44-A572-7E18EC2C109F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Repositories", "src\Nadafa.Users.Repositories\Nadafa.Users.Repositories.csproj", "{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Shared", "src\Nadafa.SharedKernal.Shared\Nadafa.SharedKernal.Shared.csproj", "{6A880FC1-D1E9-4016-9667-534108C52CA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Application", "src\Nadafa.SharedKernal.Application\Nadafa.SharedKernal.Application.csproj", "{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Api", "src\Nadafa.SharedKernal.Api\Nadafa.SharedKernal.Api.csproj", "{87298239-33C2-4CAB-A1AE-5DAF5305DB05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B82D83A9-4111-4E48-95D7-F69920A02DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82D83A9-4111-4E48-95D7-F69920A02DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82D83A9-4111-4E48-95D7-F69920A02DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82D83A9-4111-4E48-95D7-F69920A02DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1174FC1A-8D95-4506-9FCA-0506F1C5E86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1174FC1A-8D95-4506-9FCA-0506F1C5E86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1174FC1A-8D95-4506-9FCA-0506F1C5E86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1174FC1A-8D95-4506-9FCA-0506F1C5E86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1817FC89-74C8-419F-910F-F13229186439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1817FC89-74C8-419F-910F-F13229186439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1817FC89-74C8-419F-910F-F13229186439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1817FC89-74C8-419F-910F-F13229186439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6C5881-EBEA-49A1-BE89-0772E09E055C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6C5881-EBEA-49A1-BE89-0772E09E055C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6C5881-EBEA-49A1-BE89-0772E09E055C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6C5881-EBEA-49A1-BE89-0772E09E055C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BACAC50-03A1-4B44-A572-7E18EC2C109F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BACAC50-03A1-4B44-A572-7E18EC2C109F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BACAC50-03A1-4B44-A572-7E18EC2C109F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BACAC50-03A1-4B44-A572-7E18EC2C109F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A880FC1-D1E9-4016-9667-534108C52CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A880FC1-D1E9-4016-9667-534108C52CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A880FC1-D1E9-4016-9667-534108C52CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A880FC1-D1E9-4016-9667-534108C52CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87298239-33C2-4CAB-A1AE-5DAF5305DB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87298239-33C2-4CAB-A1AE-5DAF5305DB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87298239-33C2-4CAB-A1AE-5DAF5305DB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87298239-33C2-4CAB-A1AE-5DAF5305DB05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B82D83A9-4111-4E48-95D7-F69920A02DE2} = {9B3AF21E-502F-4497-B068-17F6BB87D2F6}
+		{1174FC1A-8D95-4506-9FCA-0506F1C5E86D} = {9B3AF21E-502F-4497-B068-17F6BB87D2F6}
+		{1817FC89-74C8-419F-910F-F13229186439} = {9B3AF21E-502F-4497-B068-17F6BB87D2F6}
+		{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B} = {9B3AF21E-502F-4497-B068-17F6BB87D2F6}
+		{0D6C5881-EBEA-49A1-BE89-0772E09E055C} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
+		{2BACAC50-03A1-4B44-A572-7E18EC2C109F} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
+		{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED} = {9B3AF21E-502F-4497-B068-17F6BB87D2F6}
+		{6A880FC1-D1E9-4016-9667-534108C52CA5} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
+		{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
+		{87298239-33C2-4CAB-A1AE-5DAF5305DB05} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6182C359-FBFA-4EBB-A181-C4CABE35D45D}
+	EndGlobalSection
+EndGlobal
