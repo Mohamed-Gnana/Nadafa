@@ -7,12 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="UserAggregate\Commands\DeleteUser\" />
-    <Folder Include="UserAggregate\Commands\ActivateUser\" />
-    <Folder Include="UserAggregate\Commands\DeactivateUser\" />
     <Folder Include="UserAggregate\Commands\ForgetPassword\" />
-    <Folder Include="UserAggregate\Commands\ActivatePhoneNumber\" />
-    <Folder Include="UserAggregate\Commands\DeactivatePhoneNumber\" />
     <Folder Include="UserAggregate\Commands\ResetPassword\" />
     <Folder Include="UserAggregate\Queries\GetUsers\" />
     <Folder Include="UserAggregate\Queries\GetUserProfile\" />

@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="UserAggregate\Events\" />
-    <Folder Include="UserAggregate\ValueObjects\" />
   </ItemGroup>
 
   <ItemGroup>

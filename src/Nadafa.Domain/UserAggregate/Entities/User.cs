@@ -1,5 +1,6 @@
 ﻿using Nadafa.SharedKernal.Domain.Entities;
 using Nadafa.SharedKernal.Shared.Enums;
+using Nadafa.Users.Domain.UserAggregate.ValueObjects;
 
 namespace Nadafa.Users.Domain.UserAggregate.Entities
 {
@@ -106,18 +107,24 @@ namespace Nadafa.Users.Domain.UserAggregate.Entities
 
 
 
-        public void UpdateName(string? name)
+        private void UpdateName(string? name)
         {
             if (name is null || name == _name) return;
 
             _name = name;
         }
 
-        public void UpdateEmail(string? email)
+        private void UpdateEmail(string? email)
         {
             if (email is null || email == _email) return;
 
             _email = email;
+        }
+
+        public void UpdateProfile(UserProfile userProfile)
+        {
+            UpdateName(userProfile.Name);
+            UpdateEmail(userProfile.Email);
         }
 
         public void UpdatePassword(string? password)

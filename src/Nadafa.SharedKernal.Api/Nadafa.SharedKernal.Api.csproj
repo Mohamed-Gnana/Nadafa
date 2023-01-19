@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Nadafa.SharedKernal.Application\Nadafa.SharedKernal.Application.csproj" />
+    <ProjectReference Include="..\Nadafa.SharedKernal.Infrastructure\Nadafa.SharedKernal.Infrastructure.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>

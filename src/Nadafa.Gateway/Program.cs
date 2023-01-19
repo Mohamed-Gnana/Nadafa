@@ -1,25 +1,76 @@
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Nadafa.Api;
+using Nadafa.Gateway.Helpers;
+using Microsoft.Extensions.DependencyInjection;
+using Nadafa.SharedKernal.Application;
+using Nadafa.SharedKernal.Api;
+using Serilog;
+using Nadafa.SharedKernal.Application.Swagger;
+using Nadafa.SharedKernal.Application.Versioning;
+using Nadafa.SharedKernal.Application.Exceptions;
+using Nadafa.SharedKernal.Application.JwtAuthorization;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+#region AppSettings
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", true, true)
+    .AddEnvironmentVariables();
+
+#endregion
+
+#region .Net Services
+
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddControllers(options =>
+{
+    options.Conventions.Add(new RouteTokenTransformerConvention(new SlugifyParameterTransformer()));
+});
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddHttpContextAccessor();
+#endregion
+
+
+#region Shared Kernal
+
+builder.Services.AddSharedKernal(builder.Configuration);
+builder.Host.UseSerilog();
+builder.Services.AddBaseSwagger(builder.Configuration);
+builder.Services.AddBaseApiVersioning();
+builder.Services.AddExceptionHandling();
+#endregion
+
+#region Application Module
+
+builder.Services.AddUser(builder.Configuration);
+
+#endregion
+
+#region Authorization
+
+builder.Services.AddBaseAuthorization(builder.Configuration);
+
+#endregion
 
 var app = builder.Build();
+IWebHostEnvironment env = app.Environment;
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+#region Shared Kernal Package
+
+app.UseExceptionHandling();
+app.UseBaseSwagger(builder.Configuration);
+
+#endregion
+
+
+using(var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    await scope.MigrateDatabase();
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
 
 app.Run();
