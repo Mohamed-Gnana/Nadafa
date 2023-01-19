@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Nadafa.Users.Infrastructure.Repositories.CommandsRepositories;
+using Nadafa.Users.Infrastructure.Repositories.QueriesRepositories;
 using Nadafa.Users.Repositories.UserAggregate.CommandRepositories;
 using Nadafa.Users.Repositories.UserAggregate.QueriesRepositories;
 
@@ -17,7 +18,7 @@ namespace Nadafa.Users.Infrastructure
                             b => b.MigrationsAssembly(typeof(UserDbContext).Assembly.FullName)));
 
             services.AddTransient<IUserCommandRepository, UserCommandsRepository>();
-            services.AddTransient<IUserQueriesRepository, IUserQueriesRepository>();
+            services.AddTransient<IUserQueriesRepository, UserQueriesRepository>();
             return services;
         }
     }

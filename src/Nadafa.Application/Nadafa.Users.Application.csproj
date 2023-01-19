@@ -14,7 +14,6 @@
     <Folder Include="UserAggregate\Commands\ActivatePhoneNumber\" />
     <Folder Include="UserAggregate\Commands\DeactivatePhoneNumber\" />
     <Folder Include="UserAggregate\Commands\ResetPassword\" />
-    <Folder Include="UserAggregate\Commands\UpdateUserCoins\" />
     <Folder Include="UserAggregate\Queries\GetUsers\" />
     <Folder Include="UserAggregate\Queries\GetUserProfile\" />
   </ItemGroup>

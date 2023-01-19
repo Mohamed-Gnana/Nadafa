@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Api", "src\Nadafa.SharedKernal.Api\Nadafa.SharedKernal.Api.csproj", "{87298239-33C2-4CAB-A1AE-5DAF5305DB05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Gateway", "src\Nadafa.Gateway\Nadafa.Gateway.csproj", "{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{87298239-33C2-4CAB-A1AE-5DAF5305DB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87298239-33C2-4CAB-A1AE-5DAF5305DB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87298239-33C2-4CAB-A1AE-5DAF5305DB05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{6A880FC1-D1E9-4016-9667-534108C52CA5} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
 		{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
 		{87298239-33C2-4CAB-A1AE-5DAF5305DB05} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
+		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0} = {10D42EB2-2486-4E11-A268-C6549839B74D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6182C359-FBFA-4EBB-A181-C4CABE35D45D}
