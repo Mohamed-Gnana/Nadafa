@@ -88,10 +88,22 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
             _context.SaveChanges();
         }
 
+        public void UpdateUser(User user, IStrategy strategy)
+        {
+            strategy.Execute(user);
+            _context.SaveChanges();
+        }
+
         public async Task UpdateUserAsync(Guid userId, IStrategy strategy, CancellationToken cancellationToken = default)
         {
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
             if (user is null) return;
+            strategy.Execute(user);
+            await _context.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task UpdateUserAsync(User user, IStrategy strategy, CancellationToken cancellationToken = default)
+        {
             strategy.Execute(user);
             await _context.SaveChangesAsync(cancellationToken);
         }

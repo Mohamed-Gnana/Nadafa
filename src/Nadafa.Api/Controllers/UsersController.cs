@@ -19,8 +19,7 @@ namespace Nadafa.Users.Api.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status200OK,
-            Type = typeof(Guid))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Guid))]
         public async Task<ActionResult<Guid>> GetUsers()
         {
             return Ok(Guid.NewGuid);
@@ -30,8 +29,7 @@ namespace Nadafa.Users.Api.Controllers
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status200OK,
-    Type = typeof(Guid))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Guid))]
         public async Task<ActionResult<Guid>> GetUser(Guid id)
         {
             return Ok(id);

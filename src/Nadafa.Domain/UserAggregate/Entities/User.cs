@@ -196,6 +196,18 @@ namespace Nadafa.Users.Domain.UserAggregate.Entities
             if (_isActive is false) return;
             _isActive = false;
         }
+
+        public void Lock()
+        {
+            if (_lockoutDate is null || _lockoutDate < DateTimeOffset.Now) return;
+            _lockoutDate = DateTimeOffset.Now.AddDays(1);
+        }
+
+        public void Unlock()
+        {
+            if (_lockoutDate > DateTimeOffset.Now) return;
+            _lockoutDate = null;
+        }
         
     }
 }
