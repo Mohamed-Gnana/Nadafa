@@ -18,7 +18,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public void ActivateUser(Guid userId)
         {
-            var user = _context.Users.FirstOrDefault(x => x.Id == userId);
+            var user = _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefault(x => x.Id == userId);
             if (user is null) return;
             user.Activate();
             _context.SaveChanges();
@@ -26,7 +29,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public async Task ActivateUserAsync(Guid userId, CancellationToken cancellationToken = default)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == userId);
+            var user = await _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefaultAsync(x => x.Id == userId);
             if (user is null) return;
             user.Activate();
             await _context.SaveChangesAsync();
@@ -50,7 +56,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public void DeactivateUser(Guid userId)
         {
-            var user = _context.Users.FirstOrDefault(x => x.Id == userId);
+            var user = _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefault(x => x.Id == userId);
             if (user is null) return;
             user.Deactivate();
             _context.SaveChanges();
@@ -58,7 +67,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public async Task DeactivateUserAsync(Guid userId, CancellationToken cancellationToken = default)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == userId);
+            var user = await _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefaultAsync(x => x.Id == userId);
             if (user is null) return;
             user.Deactivate();
             await _context.SaveChangesAsync();
@@ -66,7 +78,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public void DeleteUser(Guid userId)
         {
-            var user = _context.Users.FirstOrDefault(x => x.Id == userId);
+            var user = _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefault(x => x.Id == userId);
             if (user is null) return;
             _context.Users.Remove(user);
             _context.SaveChanges();
@@ -74,7 +89,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public async Task DeleteUserAsync(Guid userId, CancellationToken cancellationToken = default)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
+            var user = await _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
             if (user is null) return;
             _context.Users.Remove(user);
             await _context.SaveChangesAsync(cancellationToken);
@@ -82,7 +100,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public void UpdateUser(Guid userId, IStrategy strategy)
         {
-            var user = _context.Users.FirstOrDefault(x => x.Id == userId);
+            var user = _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefault(x => x.Id == userId);
             if (user is null) return;
             strategy.Execute(user);
             _context.SaveChanges();
@@ -96,7 +117,10 @@ namespace Nadafa.Users.Infrastructure.Repositories.CommandsRepositories
 
         public async Task UpdateUserAsync(Guid userId, IStrategy strategy, CancellationToken cancellationToken = default)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
+            var user = await _context.Users
+                .Include(x => x.Phones)
+                .Include(x => x.Audits)
+                .FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
             if (user is null) return;
             strategy.Execute(user);
             await _context.SaveChangesAsync(cancellationToken);

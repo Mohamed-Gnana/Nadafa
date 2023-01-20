@@ -9,29 +9,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nadafa.Requests", "Nadafa.R
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nadafa.Gateway", "Nadafa.Gateway", "{10D42EB2-2486-4E11-A268-C6549839B74D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Domain", "src\Nadafa.Domain\Nadafa.Users.Domain.csproj", "{B82D83A9-4111-4E48-95D7-F69920A02DE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.Users.Domain", "src\Nadafa.Domain\Nadafa.Users.Domain.csproj", "{B82D83A9-4111-4E48-95D7-F69920A02DE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Infrastructure", "src\Nadafa.Infrastructure\Nadafa.Users.Infrastructure.csproj", "{1174FC1A-8D95-4506-9FCA-0506F1C5E86D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.Users.Infrastructure", "src\Nadafa.Infrastructure\Nadafa.Users.Infrastructure.csproj", "{1174FC1A-8D95-4506-9FCA-0506F1C5E86D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Application", "src\Nadafa.Application\Nadafa.Users.Application.csproj", "{1817FC89-74C8-419F-910F-F13229186439}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.Users.Application", "src\Nadafa.Application\Nadafa.Users.Application.csproj", "{1817FC89-74C8-419F-910F-F13229186439}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Api", "src\Nadafa.Api\Nadafa.Users.Api.csproj", "{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.Users.Api", "src\Nadafa.Api\Nadafa.Users.Api.csproj", "{6CA1BC9F-23D0-4F05-BD23-7ECB0B4EB93B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nadafa.SharedKernal", "Nadafa.SharedKernal", "{E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Domain", "src\Nadafa.SharedKernal.Domain\Nadafa.SharedKernal.Domain.csproj", "{0D6C5881-EBEA-49A1-BE89-0772E09E055C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.SharedKernal.Domain", "src\Nadafa.SharedKernal.Domain\Nadafa.SharedKernal.Domain.csproj", "{0D6C5881-EBEA-49A1-BE89-0772E09E055C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Infrastructure.EntityFramework", "src\Nadafa.SharedKernal.Infrastructure\Nadafa.SharedKernal.Infrastructure.EntityFramework.csproj", "{2BACAC50-03A1-4B44-A572-7E18EC2C109F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.SharedKernal.Infrastructure.EntityFramework", "src\Nadafa.SharedKernal.Infrastructure\Nadafa.SharedKernal.Infrastructure.EntityFramework.csproj", "{2BACAC50-03A1-4B44-A572-7E18EC2C109F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Users.Repositories", "src\Nadafa.Users.Repositories\Nadafa.Users.Repositories.csproj", "{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.Users.Repositories", "src\Nadafa.Users.Repositories\Nadafa.Users.Repositories.csproj", "{7E5ABBE3-0C07-4B35-A49C-D6403CB64AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Shared", "src\Nadafa.SharedKernal.Shared\Nadafa.SharedKernal.Shared.csproj", "{6A880FC1-D1E9-4016-9667-534108C52CA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.SharedKernal.Shared", "src\Nadafa.SharedKernal.Shared\Nadafa.SharedKernal.Shared.csproj", "{6A880FC1-D1E9-4016-9667-534108C52CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Application", "src\Nadafa.SharedKernal.Application\Nadafa.SharedKernal.Application.csproj", "{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.SharedKernal.Application", "src\Nadafa.SharedKernal.Application\Nadafa.SharedKernal.Application.csproj", "{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.SharedKernal.Api", "src\Nadafa.SharedKernal.Api\Nadafa.SharedKernal.Api.csproj", "{87298239-33C2-4CAB-A1AE-5DAF5305DB05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.SharedKernal.Api", "src\Nadafa.SharedKernal.Api\Nadafa.SharedKernal.Api.csproj", "{87298239-33C2-4CAB-A1AE-5DAF5305DB05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Gateway", "src\Nadafa.Gateway\Nadafa.Gateway.csproj", "{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nadafa.Gateway", "src\Nadafa.Gateway\Nadafa.Gateway.csproj", "{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Requests.Domain", "src\Nadafa.Requests.Domain\Nadafa.Requests.Domain.csproj", "{A56769DA-B721-43B9-ACC2-7D5234515E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Requests.Infrastructure.EntityFramework", "src\Nadafa.Requests.Infrastructure\Nadafa.Requests.Infrastructure.EntityFramework.csproj", "{5F7982E7-45FF-46CE-9E85-E07196F751E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Requests.Repositories", "src\Nadafa.Requests.Repositories\Nadafa.Requests.Repositories.csproj", "{FA1CA850-B74E-4DB8-8EF1-8891366A78A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Requests.Application", "src\Nadafa.Requests.Application\Nadafa.Requests.Application.csproj", "{E7A5BE34-AF12-482F-A3F6-7449AD72CB29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nadafa.Requests.Api", "src\Nadafa.Requests.Api\Nadafa.Requests.Api.csproj", "{650FC7EF-20CE-4E5F-9053-ACA627C5DEF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +93,26 @@ Global
 		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56769DA-B721-43B9-ACC2-7D5234515E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56769DA-B721-43B9-ACC2-7D5234515E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56769DA-B721-43B9-ACC2-7D5234515E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56769DA-B721-43B9-ACC2-7D5234515E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F7982E7-45FF-46CE-9E85-E07196F751E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7982E7-45FF-46CE-9E85-E07196F751E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7982E7-45FF-46CE-9E85-E07196F751E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7982E7-45FF-46CE-9E85-E07196F751E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1CA850-B74E-4DB8-8EF1-8891366A78A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1CA850-B74E-4DB8-8EF1-8891366A78A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1CA850-B74E-4DB8-8EF1-8891366A78A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1CA850-B74E-4DB8-8EF1-8891366A78A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A5BE34-AF12-482F-A3F6-7449AD72CB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A5BE34-AF12-482F-A3F6-7449AD72CB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A5BE34-AF12-482F-A3F6-7449AD72CB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A5BE34-AF12-482F-A3F6-7449AD72CB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650FC7EF-20CE-4E5F-9053-ACA627C5DEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650FC7EF-20CE-4E5F-9053-ACA627C5DEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650FC7EF-20CE-4E5F-9053-ACA627C5DEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650FC7EF-20CE-4E5F-9053-ACA627C5DEF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +129,11 @@ Global
 		{884ADB04-5C86-41FD-ADC2-3090D6CCEBFD} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
 		{87298239-33C2-4CAB-A1AE-5DAF5305DB05} = {E44FF25C-70EF-4CFE-BEF2-1BC4A11BC2D0}
 		{87992FEE-BA27-4875-9BA2-CC142DC3C0B0} = {10D42EB2-2486-4E11-A268-C6549839B74D}
+		{A56769DA-B721-43B9-ACC2-7D5234515E6A} = {0A5EC5EA-FE9F-422D-8E57-50AE465D5771}
+		{5F7982E7-45FF-46CE-9E85-E07196F751E1} = {0A5EC5EA-FE9F-422D-8E57-50AE465D5771}
+		{FA1CA850-B74E-4DB8-8EF1-8891366A78A4} = {0A5EC5EA-FE9F-422D-8E57-50AE465D5771}
+		{E7A5BE34-AF12-482F-A3F6-7449AD72CB29} = {0A5EC5EA-FE9F-422D-8E57-50AE465D5771}
+		{650FC7EF-20CE-4E5F-9053-ACA627C5DEF3} = {0A5EC5EA-FE9F-422D-8E57-50AE465D5771}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6182C359-FBFA-4EBB-A181-C4CABE35D45D}

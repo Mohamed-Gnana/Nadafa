@@ -9,11 +9,10 @@
   <ItemGroup>
     <Folder Include="UserAggregate\Commands\ForgetPassword\" />
     <Folder Include="UserAggregate\Commands\ResetPassword\" />
-    <Folder Include="UserAggregate\Queries\GetUsers\" />
-    <Folder Include="UserAggregate\Queries\GetUserProfile\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.3.0" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.21.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
   </ItemGroup>

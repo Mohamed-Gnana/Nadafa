@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Nadafa.Gateway": {
+    "Nadafa": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

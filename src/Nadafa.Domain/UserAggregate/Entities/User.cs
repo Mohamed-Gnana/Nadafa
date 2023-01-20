@@ -4,7 +4,7 @@ using Nadafa.Users.Domain.UserAggregate.ValueObjects;
 
 namespace Nadafa.Users.Domain.UserAggregate.Entities
 {
-    public class User: BaseEntityWithActivity
+    public class User : BaseEntityWithActivity
     {
         private string _password;
         private string? _email;
@@ -40,7 +40,7 @@ namespace Nadafa.Users.Domain.UserAggregate.Entities
 
             _coins = 0;
 
-            _phones.Add(new Phone(phoneNumber));
+            _phones.Add(new Phone(phoneNumber, true));
         }
 
 
@@ -160,21 +160,21 @@ namespace Nadafa.Users.Domain.UserAggregate.Entities
             _coins = coins.Value;
         }
 
-        public void AddPhone(string? phone)
+        public void AddPhone(PhoneEntityDto? phone)
         {
             if (phone is null) return;
-            if (_phones.Any(x => x.PhoneNumber == phone)) return;
+            if (_phones.Any(x => x.PhoneNumber == phone.PhoneNumber)) return;
 
-            _phones.Add(new Phone(phone));
+            _phones.Add(new Phone(phone.PhoneNumber, phone.IsActive,phone.IsMain));
         }
 
 
-        public void UpdatePhone(Guid? phoneId, string? newPhone)
+        public void UpdatePhone(PhoneEntityDto? phone)
         {
-            if (phoneId is null) return;
-            var phone = _phones.FirstOrDefault(x => x.Id == phoneId);
-            if (phone is null) return;
-            phone.UpdatePhoneNumber(newPhone);
+            if (phone is null || phone.Id == default) return;
+            var curPhone = _phones.FirstOrDefault(x => x.Id == phone.Id);
+            if (curPhone is null) return;
+            curPhone.Update(phone.PhoneNumber, phone.IsActive, phone.IsMain);
         }
 
 
@@ -183,6 +183,8 @@ namespace Nadafa.Users.Domain.UserAggregate.Entities
             if (phoneId is null) return;
             var phone = _phones.FirstOrDefault(x => x.Id == phoneId);
             if (phone is null) return;
+            if (phone.IsMain && _phones.Any(x => x.IsMain && x.Id != phone.Id) == false) return;
+            if (phone.IsActive && _phones.Any(x => x.IsActive && x.Id != phone.Id) == false) return;
             _phones.Remove(phone);
         }
 

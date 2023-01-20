@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Nadafa.Api\Nadafa.Users.Api.csproj" />
+    <ProjectReference Include="..\Nadafa.Requests.Api\Nadafa.Requests.Api.csproj" />
   </ItemGroup>
 
 </Project>

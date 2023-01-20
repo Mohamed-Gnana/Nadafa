@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nadafa.Requests.Application\Nadafa.Requests.Application.csproj" />
+    <ProjectReference Include="..\Nadafa.Requests.Infrastructure\Nadafa.Requests.Infrastructure.EntityFramework.csproj" />
+    <ProjectReference Include="..\Nadafa.SharedKernal.Api\Nadafa.SharedKernal.Api.csproj" />
+  </ItemGroup>
+
+</Project>

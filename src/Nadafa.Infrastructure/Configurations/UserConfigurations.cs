@@ -13,6 +13,7 @@ namespace Nadafa.Users.Infrastructure.Configurations
             builder.HasMany(x => x.Phones);
             builder.HasMany(x => x.Audits);
             builder.HasIndex(x => x.Email).IsUnique();
+            builder.Ignore(x => x.IsLocked);
         }
     }
 }

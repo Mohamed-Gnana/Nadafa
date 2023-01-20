@@ -9,6 +9,7 @@ using Nadafa.SharedKernal.Application.Swagger;
 using Nadafa.SharedKernal.Application.Versioning;
 using Nadafa.SharedKernal.Application.Exceptions;
 using Nadafa.SharedKernal.Application.JwtAuthorization;
+using Nadafa.Requests.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,7 +47,7 @@ builder.Services.AddExceptionHandling();
 
 #region Application Module
 
-builder.Services.AddUser(builder.Configuration);
+builder.Services.AddUser(builder.Configuration).AddRequest(builder.Configuration);
 
 #endregion
 
